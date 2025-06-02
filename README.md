@@ -21,3 +21,15 @@
 `SELECT DISTINCT apellidos_empleados FROM empleado;`
 
 ![Consulta 2](img/consulta_2.png "Consulta 2")
+
+3. Obtener todos los datos de los empleados que se apellidan 'Gomez'.
+
+`SELECT * FROM empleado WHERE apellidos_empleados = 'Gomez';`
+
+![Consulta 3](img/consulta_3.png "Consulta 3")
+
+4. Obtener todos los datos de los empleados que se apellidan "Diaz" y los que se apellidan "Rodriguez".  Usar OR o IN
+
+`SELECT * FROM empleado WHERE apellidos_empleados = 'Diaz' OR apellidos_empleados = 'Rodriguez';`
+
+![Consulta 4](img/consulta_4.png "Consulta 4")
