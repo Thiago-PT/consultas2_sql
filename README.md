@@ -15,3 +15,9 @@
 `SELECT apellidos_empleados FROM empleado;`
 
 ![Consulta 1](img/consulta_1.png "Consulta 1")
+
+2. Obtener los apellidos de todos los empleados sin repeticiones.
+
+`SELECT DISTINCT apellidos_empleados FROM empleado;`
+
+![Consulta 2](img/consulta_2.png "Consulta 2")
