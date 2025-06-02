@@ -8,6 +8,10 @@
 
 ![Estructura](img/estructura.png "Estrucutra de la BD")
 
+## Tabla de empleados
+
+![Empleados](img/datos_empleados.png "Datos de la tabla de empleados")
+
 ## Consultas a la BD
 
 1. Obtener la lista de los apellidos de todos los empleados.
@@ -33,3 +37,21 @@
 `SELECT * FROM empleado WHERE apellidos_empleados = 'Diaz' OR apellidos_empleados = 'Rodriguez';`
 
 ![Consulta 4](img/consulta_4.png "Consulta 4")
+
+5. Obtener los nombres de los empleados que trabajan en el departamento 11
+
+`SELECT nombre_empleado FROM empleado WHERE id_departamento = 11;`
+
+![Consulta 5](img/consulta_5.png "Consulta 5")
+
+6. Obtener todos los datos de los empleados cuyo apellido empiece por 'P'
+
+`SELECT * FROM empleado WHERE apellidos_empleados LIKE 'P%';`
+
+![Consulta 6](img/consulta_6.png "Consulta 6")
+
+7. Obtener el presupuesto total de todos los departamentos.
+
+`SELECT SUM(presupuesto_departamento) AS Presupuesto_total FROM departamento;`
+
+![Consulta 7](img/consulta_7.png "Consulta 7")
