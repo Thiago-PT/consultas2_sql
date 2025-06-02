@@ -68,3 +68,8 @@
 
 ![Consulta 9](img/consulta_9.png "Consulta 9")
 
+10. Obtener un listado completo de empleados, incluyendo el nombre y apellidos del empleado junto al nombre y presupuesto de su departamento.
+
+`SELECT empleado.nombre_empleado as Nombre, empleado.apellidos_empleados AS Apellidos, departamento.nombre_departamento AS Departamento, departamento.presupuesto_departamento AS Presupuesto_departamento FROM empleado JOIN departamento ON empleado.id_departamento = departamento.id_departamento;`
+
+![Consulta 10](img/consulta_10.png "Consulta 10")
