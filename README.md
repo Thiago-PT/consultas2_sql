@@ -55,3 +55,16 @@
 `SELECT SUM(presupuesto_departamento) AS Presupuesto_total FROM departamento;`
 
 ![Consulta 7](img/consulta_7.png "Consulta 7")
+
+8. Obtener el número de empleados de cada departamento.
+
+`SELECT id_departamento, COUNT(*) AS Número_empleados FROM empleado GROUP BY id_departamento;`
+
+![Consulta 8](img/consulta_8.png "Consulta 8")
+
+9. Obtener un listado completo de empleados, incluyendo por cada empleado los datos del empleado y de su departamento.
+
+`SELECT empleado.id_empleado, empleado.nombre_empleado as Nombre, empleado.apellidos_empleados AS Apellidos, departamento.nombre_departamento AS Departamento, departamento.presupuesto_departamento AS Presupuesto_departamento, departamento.id_departamento FROM empleado JOIN departamento ON empleado.id_departamento = departamento.id_departamento;`
+
+![Consulta 9](img/consulta_9.png "Consulta 9")
+
