@@ -73,3 +73,9 @@
 `SELECT empleado.nombre_empleado as Nombre, empleado.apellidos_empleados AS Apellidos, departamento.nombre_departamento AS Departamento, departamento.presupuesto_departamento AS Presupuesto_departamento FROM empleado JOIN departamento ON empleado.id_departamento = departamento.id_departamento;`
 
 ![Consulta 10](img/consulta_10.png "Consulta 10")
+
+11. Obtener los nombres y apellidos de los empleados que trabajen en departamentos cuyo presupuesto sea mayor a 100000000
+
+`SELECT nombre_empleado AS Nombre, apellidos_empleados AS Apellidos FROM empleado JOIN departamento ON empleado.id_departamento = departamento.id_departamento WHERE departamento.presupuesto_departamento > 100000000;`
+
+![Consulta 11](img/consulta_11.png "Consulta 11")
